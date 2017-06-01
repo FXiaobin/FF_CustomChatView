@@ -9,10 +9,19 @@
 /* Begin PBXBuildFile section */
 		18E783E21EDE5DCE0041135D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E783E11EDE5DCE0041135D /* main.m */; };
 		18E783E51EDE5DCE0041135D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E783E41EDE5DCE0041135D /* AppDelegate.m */; };
-		18E783E81EDE5DCE0041135D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E783E71EDE5DCE0041135D /* ViewController.m */; };
 		18E783EB1EDE5DCE0041135D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E783E91EDE5DCE0041135D /* Main.storyboard */; };
 		18E783ED1EDE5DCE0041135D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E783EC1EDE5DCE0041135D /* Assets.xcassets */; };
 		18E783F01EDE5DCE0041135D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E783EE1EDE5DCE0041135D /* LaunchScreen.storyboard */; };
+		18E784041EDE652F0041135D /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E784011EDE652F0041135D /* CommonUtils.m */; };
+		18E784051EDE652F0041135D /* UIViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E784031EDE652F0041135D /* UIViewUtils.m */; };
+		18E7840F1EDE87640041135D /* MBProgressHUD+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7840E1EDE87640041135D /* MBProgressHUD+Alert.m */; };
+		18E784191EDE87F70041135D /* FriendsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E784131EDE87F70041135D /* FriendsListCell.m */; };
+		18E7841A1EDE87F70041135D /* FriendsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E784171EDE87F70041135D /* FriendsListViewController.m */; };
+		18E7841D1EDE881D0041135D /* AddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7841C1EDE881D0041135D /* AddFriendViewController.m */; };
+		18E784201EDE9D750041135D /* ConversationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7841F1EDE9D750041135D /* ConversationListViewController.m */; };
+		18E784231EDEA5770041135D /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E784221EDEA5770041135D /* ChatViewController.m */; };
+		18E784261EDEB4040041135D /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E784251EDEB4040041135D /* ChatCell.m */; };
+		D96B972CE425B375BC15256E /* libPods-FF_CustomChatView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22901BACFBF3580C93533F3A /* libPods-FF_CustomChatView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +29,33 @@
 		18E783E11EDE5DCE0041135D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18E783E31EDE5DCE0041135D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18E783E41EDE5DCE0041135D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18E783E61EDE5DCE0041135D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18E783E71EDE5DCE0041135D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18E783EA1EDE5DCE0041135D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18E783EC1EDE5DCE0041135D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18E783EF1EDE5DCE0041135D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18E783F11EDE5DCE0041135D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E783FA1EDE60820041135D /* FF_CustomChatView-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FF_CustomChatView-PrefixHeader.pch"; sourceTree = "<group>"; };
+		18E783FB1EDE60C90041135D /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		18E784001EDE652F0041135D /* CommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtils.h; sourceTree = "<group>"; };
+		18E784011EDE652F0041135D /* CommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtils.m; sourceTree = "<group>"; };
+		18E784021EDE652F0041135D /* UIViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewUtils.h; sourceTree = "<group>"; };
+		18E784031EDE652F0041135D /* UIViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewUtils.m; sourceTree = "<group>"; };
+		18E7840D1EDE87640041135D /* MBProgressHUD+Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Alert.h"; sourceTree = "<group>"; };
+		18E7840E1EDE87640041135D /* MBProgressHUD+Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Alert.m"; sourceTree = "<group>"; };
+		18E784121EDE87F70041135D /* FriendsListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsListCell.h; sourceTree = "<group>"; };
+		18E784131EDE87F70041135D /* FriendsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsListCell.m; sourceTree = "<group>"; };
+		18E784161EDE87F70041135D /* FriendsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsListViewController.h; sourceTree = "<group>"; };
+		18E784171EDE87F70041135D /* FriendsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsListViewController.m; sourceTree = "<group>"; };
+		18E7841B1EDE881D0041135D /* AddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendViewController.h; sourceTree = "<group>"; };
+		18E7841C1EDE881D0041135D /* AddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendViewController.m; sourceTree = "<group>"; };
+		18E7841E1EDE9D750041135D /* ConversationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationListViewController.h; sourceTree = "<group>"; };
+		18E7841F1EDE9D750041135D /* ConversationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationListViewController.m; sourceTree = "<group>"; };
+		18E784211EDEA5770041135D /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		18E784221EDEA5770041135D /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		18E784241EDEB4040041135D /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
+		18E784251EDEB4040041135D /* ChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
+		22901BACFBF3580C93533F3A /* libPods-FF_CustomChatView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FF_CustomChatView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ED599D0E4DB32A0332F2CF5 /* Pods-FF_CustomChatView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_CustomChatView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FF_CustomChatView/Pods-FF_CustomChatView.debug.xcconfig"; sourceTree = "<group>"; };
+		B51B800DBE2ACA050A54B480 /* Pods-FF_CustomChatView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_CustomChatView.release.xcconfig"; path = "Pods/Target Support Files/Pods-FF_CustomChatView/Pods-FF_CustomChatView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D96B972CE425B375BC15256E /* libPods-FF_CustomChatView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +75,8 @@
 			children = (
 				18E783DF1EDE5DCE0041135D /* FF_CustomChatView */,
 				18E783DE1EDE5DCE0041135D /* Products */,
+				F6469D99D10F4856ABEF4FDA /* Pods */,
+				656197098C1D7B97FBA5E325 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +91,11 @@
 		18E783DF1EDE5DCE0041135D /* FF_CustomChatView */ = {
 			isa = PBXGroup;
 			children = (
+				18E784101EDE87F70041135D /* Classes */,
+				18E783FF1EDE652F0041135D /* WealthUtils */,
 				18E783E31EDE5DCE0041135D /* AppDelegate.h */,
 				18E783E41EDE5DCE0041135D /* AppDelegate.m */,
-				18E783E61EDE5DCE0041135D /* ViewController.h */,
-				18E783E71EDE5DCE0041135D /* ViewController.m */,
+				18E783FB1EDE60C90041135D /* Define.h */,
 				18E783E91EDE5DCE0041135D /* Main.storyboard */,
 				18E783EC1EDE5DCE0041135D /* Assets.xcassets */,
 				18E783EE1EDE5DCE0041135D /* LaunchScreen.storyboard */,
@@ -75,8 +109,90 @@
 			isa = PBXGroup;
 			children = (
 				18E783E11EDE5DCE0041135D /* main.m */,
+				18E783FA1EDE60820041135D /* FF_CustomChatView-PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18E783FF1EDE652F0041135D /* WealthUtils */ = {
+			isa = PBXGroup;
+			children = (
+				18E7840D1EDE87640041135D /* MBProgressHUD+Alert.h */,
+				18E7840E1EDE87640041135D /* MBProgressHUD+Alert.m */,
+				18E784001EDE652F0041135D /* CommonUtils.h */,
+				18E784011EDE652F0041135D /* CommonUtils.m */,
+				18E784021EDE652F0041135D /* UIViewUtils.h */,
+				18E784031EDE652F0041135D /* UIViewUtils.m */,
+			);
+			path = WealthUtils;
+			sourceTree = "<group>";
+		};
+		18E784101EDE87F70041135D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				18E784111EDE87F70041135D /* Cells */,
+				18E784141EDE87F70041135D /* Models */,
+				18E784151EDE87F70041135D /* ViewControllers */,
+				18E784181EDE87F70041135D /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		18E784111EDE87F70041135D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				18E784121EDE87F70041135D /* FriendsListCell.h */,
+				18E784131EDE87F70041135D /* FriendsListCell.m */,
+				18E784241EDEB4040041135D /* ChatCell.h */,
+				18E784251EDEB4040041135D /* ChatCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		18E784141EDE87F70041135D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18E784151EDE87F70041135D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18E7841E1EDE9D750041135D /* ConversationListViewController.h */,
+				18E7841F1EDE9D750041135D /* ConversationListViewController.m */,
+				18E784161EDE87F70041135D /* FriendsListViewController.h */,
+				18E784171EDE87F70041135D /* FriendsListViewController.m */,
+				18E7841B1EDE881D0041135D /* AddFriendViewController.h */,
+				18E7841C1EDE881D0041135D /* AddFriendViewController.m */,
+				18E784211EDEA5770041135D /* ChatViewController.h */,
+				18E784221EDEA5770041135D /* ChatViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		18E784181EDE87F70041135D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		656197098C1D7B97FBA5E325 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22901BACFBF3580C93533F3A /* libPods-FF_CustomChatView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6469D99D10F4856ABEF4FDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7ED599D0E4DB32A0332F2CF5 /* Pods-FF_CustomChatView.debug.xcconfig */,
+				B51B800DBE2ACA050A54B480 /* Pods-FF_CustomChatView.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18E783F41EDE5DCE0041135D /* Build configuration list for PBXNativeTarget "FF_CustomChatView" */;
 			buildPhases = (
+				45AF072599A895257170650D /* [CP] Check Pods Manifest.lock */,
 				18E783D91EDE5DCE0041135D /* Sources */,
 				18E783DA1EDE5DCE0041135D /* Frameworks */,
 				18E783DB1EDE5DCE0041135D /* Resources */,
+				E827671EFED0440EB4CCF367 /* [CP] Embed Pods Frameworks */,
+				3F6BE67E41979C7ADA139C4D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,6 +229,7 @@
 				TargetAttributes = {
 					18E783DC1EDE5DCE0041135D = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 2UW777SK3J;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -145,14 +265,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F6BE67E41979C7ADA139C4D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FF_CustomChatView/Pods-FF_CustomChatView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45AF072599A895257170650D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E827671EFED0440EB4CCF367 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FF_CustomChatView/Pods-FF_CustomChatView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18E783D91EDE5DCE0041135D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E783E81EDE5DCE0041135D /* ViewController.m in Sources */,
+				18E784201EDE9D750041135D /* ConversationListViewController.m in Sources */,
+				18E784041EDE652F0041135D /* CommonUtils.m in Sources */,
+				18E784231EDEA5770041135D /* ChatViewController.m in Sources */,
+				18E7840F1EDE87640041135D /* MBProgressHUD+Alert.m in Sources */,
+				18E784051EDE652F0041135D /* UIViewUtils.m in Sources */,
+				18E784261EDEB4040041135D /* ChatCell.m in Sources */,
 				18E783E51EDE5DCE0041135D /* AppDelegate.m in Sources */,
+				18E7841D1EDE881D0041135D /* AddFriendViewController.m in Sources */,
+				18E7841A1EDE87F70041135D /* FriendsListViewController.m in Sources */,
 				18E783E21EDE5DCE0041135D /* main.m in Sources */,
+				18E784191EDE87F70041135D /* FriendsListCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +448,11 @@
 		};
 		18E783F51EDE5DCE0041135D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ED599D0E4DB32A0332F2CF5 /* Pods-FF_CustomChatView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2UW777SK3J;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FF_CustomChatView/FF_CustomChatView-PrefixHeader.pch";
 				INFOPLIST_FILE = FF_CustomChatView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fanxiaobin.FF-CustomChatView";
@@ -283,8 +462,11 @@
 		};
 		18E783F61EDE5DCE0041135D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B51B800DBE2ACA050A54B480 /* Pods-FF_CustomChatView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2UW777SK3J;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FF_CustomChatView/FF_CustomChatView-PrefixHeader.pch";
 				INFOPLIST_FILE = FF_CustomChatView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fanxiaobin.FF-CustomChatView";
@@ -311,6 +493,7 @@
 				18E783F61EDE5DCE0041135D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
